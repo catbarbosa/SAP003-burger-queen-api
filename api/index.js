@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import productRoutes from "./routes/productRoutes";
+import orderRoutes from "./routes/orderRoutes";
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const port = process.env.PORT || 3000;
 
 app.use("/api/products", productRoutes);
+app.use("/api/order", orderRoutes);
 
 // when a random route is inputed
 app.get("*", (req, res) =>
