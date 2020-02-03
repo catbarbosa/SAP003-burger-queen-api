@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       table: {
-        type: Sequelize.STRING
+        type: Sequelize.DECIMAL
       },
       status: {
         type: Sequelize.STRING

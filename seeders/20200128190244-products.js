@@ -93,6 +93,12 @@ module.exports = {
   //   price:10,
   //   createdAt:new Date(),
   //   updatedAt:new Date()
+  // },
+  // {
+    name:'Bolo de Chocolate',
+    price:5,
+    createdAt:new Date(),
+    updatedAt:new Date()
   }
 ])
   },
