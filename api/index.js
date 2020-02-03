@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const port = process.env.PORT || 3000;
 
 app.use("/api/products", productRoutes);
-app.use("/api/order", orderRoutes);
+app.use("/api/orders", orderRoutes);
 
 // when a random route is inputed
 app.get("*", (req, res) =>
